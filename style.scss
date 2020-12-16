@@ -79,11 +79,12 @@ header a {
         padding-bottom: 0;
         // margin:100px 0 0;
         text-align: center;
-        color: #161616f1;
+        color: #ffffffee;
     }
 
     p {
-        font-weight: bolder;
+        font-weight: 500;
+        color: #ffffffee;
     }
 }
 
@@ -91,7 +92,7 @@ h2 {
     margin-bottom: 0;
     text-align: center;
     margin-top: 0px;
-    color: #0e0d0dfa;
+    color: #fffffffa;
     font-weight: bold;
 }
 
@@ -109,18 +110,21 @@ h2 {
     margin: 0;
     padding: 0;
     width: max-content;
+     //-ms-filter: blur(6px);
+    //filter: blur(6px);
 }
 .home-title {
-    padding: 5px 0 5px;
+    padding: 5px 0 3px;
     text-align: center;
     margin-bottom: 0px;
+    //background-color: rgba(240, 248, 255, 0.644);
+
 }
 p {
     text-align: center;
     padding: 0px;
     //margin-top: 8px;
     font-size: 1.1em;
-
 }
 
 .bg {
@@ -138,17 +142,30 @@ p {
     background-position: center top;
     background-repeat: no-repeat;
 }
+//バック画像を暗くする
+.home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 10, 10, 0.158);
+  }
 
 .about-article {
     margin-top: 100px;
     h2 {
         font-size: 3.5em;
         font-weight: 300;
-        font-family: 'Amatic SC', cursive;
-
+        font-family: "Caveat", cursive;
     }
 }
 
+.under {
+    background: linear-gradient(transparent 80%, #24b0db79 50%);
+}
 .about-content {
     margin: 20px 0 100px;
     max-width: 50vw;
@@ -159,14 +176,14 @@ p {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     p {
-        font-size: 1em;
+        font-size: 0.9em;
         text-align: justify;
     }
 }
-p .aboutPara {
+.aboutPara {
     font-weight: lighter;
-    font-family: 'Sawarabi Gothic', sans-serif;
-
+    font-family: "Sawarabi Gothic", sans-serif;
+    margin-top: 20px;
 }
 
 .slider {

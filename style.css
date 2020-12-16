@@ -86,18 +86,19 @@ header a {
   font-size: 70px;
   padding-bottom: 0;
   text-align: center;
-  color: #161616f1;
+  color: #ffffffee;
 }
 
 .wrap p {
-  font-weight: bolder;
+  font-weight: 500;
+  color: #ffffffee;
 }
 
 h2 {
   margin-bottom: 0;
   text-align: center;
   margin-top: 0px;
-  color: #0e0d0dfa;
+  color: #fffffffa;
   font-weight: bold;
 }
 
@@ -120,7 +121,7 @@ h2 {
 }
 
 .home-title {
-  padding: 5px 0 5px;
+  padding: 5px 0 3px;
   text-align: center;
   margin-bottom: 0px;
 }
@@ -147,6 +148,17 @@ p {
   background-repeat: no-repeat;
 }
 
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 10, 10, 0.158);
+}
+
 .about-article {
   margin-top: 100px;
 }
@@ -154,7 +166,12 @@ p {
 .about-article h2 {
   font-size: 3.5em;
   font-weight: 300;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Caveat", cursive;
+}
+
+.under {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(50%, #24b0db79));
+  background: linear-gradient(transparent 80%, #24b0db79 50%);
 }
 
 .about-content {
@@ -169,13 +186,14 @@ p {
 }
 
 .about-content p {
-  font-size: 1em;
+  font-size: 0.9em;
   text-align: justify;
 }
 
-p .aboutPara {
+.aboutPara {
   font-weight: lighter;
-  font-family: 'Sawarabi Gothic', sans-serif;
+  font-family: "Sawarabi Gothic", sans-serif;
+  margin-top: 20px;
 }
 
 .slider {

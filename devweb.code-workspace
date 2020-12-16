@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../../../../Applications/MAMP/htdocs/php-study"
+		},
+		{
+			"path": "../new_git"
 		}
 	],
 	"settings": {}

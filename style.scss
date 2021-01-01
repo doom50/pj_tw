@@ -54,6 +54,7 @@ header a {
     color: rgb(27, 27, 27);
     align-items: center;
     margin: 0;
+    margin-right: 20px;
     text-transform: uppercase;
     list-style: none;
     font-size: 0.5em;
@@ -178,7 +179,7 @@ p {
     -ms-transform: translateX(-50%);
     p {
         font-size: 0.9em;
-        text-align: justify;
+        text-align: center;
     }
 }
 .aboutPara {
@@ -192,7 +193,7 @@ p {
 //}
 
 .footer-wrap {
-    background-color: #6fc3fcd8;
+    background-color: #1fb8ffe7;
     //margin-top: 100px;
     height: 60px;
     text-align: center;
@@ -252,13 +253,17 @@ p {
 text-align: center;
  margin-top: 30px;
  font-size: 0.9em;
+ padding-top: 20px;
+ padding-bottom: 60px;
  .main{
     font-size: 0.9em;
+    margin-bottom: 60px;
 
  }
  h3{
      font-size: 1.3em;
      font-weight: lighter;
+
  }
 }
 //.swiper-button-next,.swiper-container-rtl,.swiper-button-prev {
@@ -269,3 +274,26 @@ text-align: center;
 //    right: 10px;
 //    left: auto;
 //}
+
+.food_btn {
+    display: inline-block;
+    width: 330px;
+    max-width: 100%;
+    padding: 20px 10px;
+    background-color: #22a38e;
+    border: 1.5px solid transparent;
+    border-radius: 30px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.103);
+    color: #fff;
+    font-size: 1.375rem;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.food_btn:focus,
+.food_btn:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color: #22a38e;
+}

@@ -169,6 +169,12 @@ p {
 
 .about-article {
     margin-top: 100px;
+    h1 {
+        font-size: 3.5em;
+        font-weight: 300;
+        font-family: "Caveat", cursive;
+        text-align: center;
+    }
     h2 {
         font-size: 3.5em;
         font-weight: 300;
@@ -196,7 +202,7 @@ p {
 .aboutPara {
     font-weight: lighter;
     font-family: "Sawarabi Gothic", sans-serif;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 //.slider {
@@ -307,4 +313,73 @@ text-align: center;
     background-color: #fff;
     border-color: currentColor;
     color: $btn-color;
+}
+
+
+//FOODページ
+
+.border-top {
+    padding: 12px 14px 16px;
+    border: 1px solid;
+}
+
+.food-main-content {
+    margin: 80px 50px 40px;
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards--col3 {
+    margin-bottom: -30px;
+.cards__item {
+    width: 31.707%;
+    margin-right: 2.43902;
+    margin-bottom: 30px;
+}
+.cards__item:nth-of-type(3n) {
+    margin-right: 0;
+}
+}
+
+.card-title{
+    margin: 0 auto;
+    //text-align: center;
+    max-width: 50%;
+    font-size: 1.1em;
+    padding: 12px 14px 50px;
+    border: 3px solid;
+    font-weight: 600;
+}
+.card__img-wrapper {
+    position: relative;
+    padding-top: 53.25%;
+    overflow: hidden;
+}
+
+.card__img {
+position: absolute;
+top: 50%;
+left: 25%;
+width: 50%;
+transform: translateY(-50%);
+text-align: center;
+}
+
+.card__body {
+    padding: 15px;
+    max-width: 50%;
+    position: relative;
+    left: 25%;
+:last-child {
+margin-bottom: 0;
+}}
+
+.card__text {
+    color: rgb(48, 47, 47);
+    text-align: justify;
+    font-size: .9rem;
 }

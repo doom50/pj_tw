@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GET IN TAIWAN | about</title>
     <link rel="shortcut icon" href="/images/favicon.ico">
-
     <meta name="dispriction" content="台湾の魅力を発信">
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="style.css">
@@ -15,9 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@500&family=M+PLUS+1p:wght@100&family=Sawarabi+Gothic&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
-
 
 <body>
     <header class="wrap">
@@ -26,8 +23,8 @@
         </h1>
         <nav>
             <ul class="nav_menu">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Food</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="template.html">Food</a></li>
                 <li><a href="#">Landscape</a></li>
                 <li><a href="#">Culture</a></li>
             </ul>
@@ -36,50 +33,66 @@
     <main>
         <section id="content">
             <div class="about-article">
-                <h2><span class="under"> Stay in Taiwan</span></h2>
-            </div>
-            <div class="about-content">
-                <p class="aboutPara">　東京から飛行機で3時間ちょっとで気軽にいける。搭乗口から降りると、6月のような湿気と匂いを感じる。
-                    <br><br>　「台湾に来たな」と思う。
-                    <br><br>　さあ、何をしようか。
-                </p>
+                <h1>food</h1>
             </div>
         </section>
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/SDIMG_1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/SDIMG_2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/SDIMG_3.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/SDIMG_4.jpg" alt=""></div>
-
-
+        <article class="food-main-content">
+            <div class="cards cards--col3">
+                <div class="cards__item card">
+                    <section>
+                        <div class="card">
+                            <h3 class="card-title">魯肉飯</h3>
+                            <figure class="card__img-wrapper">
+                                <!--<h3>魯肉飯</h3>-->
+                                <img class="card__img" src="images/food/imageFood - 7.jpeg" alt="ルーローハン">
+                            </figure>
+                            <div class="card__body">
+                                <p class="card__text">
+                                    　ガツンと食べたいけど、まだまだ余力は残したい。<br>
+                                    　そんな時は、タレが染みた、そぼろたっぷりのコレ！
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--/.card-->
+                <!--div class="cards__item card"の繰り返し-->
+                <div class="cards__item card">
+                    <section>
+                        <div class="card">
+                            <h3 class="card-title">サンドイッチ</h3>
+                            <figure class="card__img-wrapper">
+                                <!--<h3>魯肉飯</h3>-->
+                                <img class="card__img" src="images/food/imageFood - 2.jpeg" alt="sandwitsh">
+                            </figure>
+                            <div class="card__body">
+                                <p class="card__text">
+                                    　まだまだ街なかを動き回るつもりなら<br>
+                                    　大きい具材が入ったサンドイッチ片手に散策もあり。
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="cards__item card">
+                    <section>
+                        <div class="card">
+                            <h3 class="card-title">コーヒー</h3>
+                            <figure class="card__img-wrapper">
+                                <!--<h3>魯肉飯</h3>-->
+                                <img class="card__img" src="images/food/imageFood - 5.jpeg" alt="ルーローハン">
+                            </figure>
+                            <div class="card__body">
+                                <p class="card__text">
+                                    　台湾にきたならタピオカドリンク、凍頂烏龍茶が定番。<br>
+                                    　だけど普段どおりに、コーヒースタンドでお気に入りの一杯をテイクアウトもまた良し。
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
-        </div>
-        <p class="slide-coment">台湾の景色は、朝から晩までいろいろな顔を見せてくれる。</p>
-        <div class="about-article">
-            <h2><span class="under">What about you?</span></h2>
-        </div>
-        <div class="food-content main">
-            お気に入りのルーロハン屋で軽食をとるもよし。<br><br>
-            火照った体をマンゴーシロップがたっぷりかかったマンゴーアイスを食べるもよし。
-            <br><br>タピオカジュースを片手に台湾大学構内を散歩するのもまた良い。
-            <br><br>
-            <div class="food-content ">
-                <h3>とりあえず腹が減った。<br>
-                    ...まずは腹ごなしだ。</h3>
-            </div>
-            <div class="food-content ">
-                <a class="food_btn" href="#">飯屋をさがそう！</a>
-            </div>
-        </div>
-
+        </article>
     </main>
     <footer>
         <div class="footer-wrap">
@@ -87,29 +100,6 @@
         </div>
     </footer>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            spaceBetween: 100,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2300,
-                speed: 1000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
 </body>
 
 </html>

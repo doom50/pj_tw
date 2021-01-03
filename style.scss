@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+$btn-color: rgba(36, 30, 30, 0.795);
+
 // common
 html {
     font-size: 100%;
@@ -25,10 +27,17 @@ img {
 /* header */
 
 header {
-    display: flex;
+    //display: flex;
+    position: fixed;
+    background-color: #fff;
     align-items: center;
     justify-content: space-between;
     font-family: "Spartan", sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 h1 {
@@ -57,8 +66,8 @@ header a {
     margin-right: 20px;
     text-transform: uppercase;
     list-style: none;
-    font-size: 0.5em;
-    font-weight: bold;
+    font-size: 0.9em;
+    font-weight: normal;
     letter-spacing: 0.2em;
 
     a {
@@ -71,12 +80,11 @@ header a {
 }
 
 .wrap {
-    //   display: flex;
-    max-width: auto;
-    margin: 0;
-    //   padding: 0 5%;
-    //   align-items: center;
-    text-align: center;
+       display: flex;
+       justify-content: space-between;
+    //   max-width: 1200px;
+       margin-top: 0;
+       height: 80px;
     h2 {
         font-size: 70px;
         padding-bottom: 0;
@@ -97,6 +105,9 @@ h2 {
     margin-top: 0px;
     color: #000000fa;
     font-weight: bold;
+}
+#content {
+    //padding-top: 80px;
 }
 
 .home-contents {
@@ -193,7 +204,7 @@ p {
 //}
 
 .footer-wrap {
-    background-color: #1fb8ffe7;
+    background-color: #23bcf8fa;
     //margin-top: 100px;
     height: 60px;
     text-align: center;
@@ -203,7 +214,7 @@ p {
         //padding: 20px 0 20px;
         position: relative;
         width: 100%;
-        font-weight: lighter;
+        font-weight: normal;
         font-size: 0.7em;
         margin: 0;
         font-weight: normal;
@@ -280,8 +291,8 @@ text-align: center;
     width: 330px;
     max-width: 100%;
     padding: 20px 10px;
-    background-color: #22a38e;
-    border: 1.5px solid transparent;
+    background-color: $btn-color;
+    border: 2.5px solid transparent;
     border-radius: 30px;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.103);
     color: #fff;
@@ -295,5 +306,5 @@ text-align: center;
 .food_btn:hover {
     background-color: #fff;
     border-color: currentColor;
-    color: #22a38e;
+    color: $btn-color;
 }

@@ -56,6 +56,7 @@ header a {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 5px;
+  font-weight: bold;
 }
 
 .nav_menu {
@@ -188,9 +189,14 @@ p {
   font-family: "Caveat", cursive;
 }
 
-.under {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(50%, #24b0db79));
-  background: linear-gradient(transparent 80%, #24b0db79 50%);
+.under.blue {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(50%, #24b0db79));
+  background: linear-gradient(transparent 70%, #24b0db79 50%);
+}
+
+.under.red {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(50%, #db24a479));
+  background: linear-gradient(transparent 70%, #db24a479 50%);
 }
 
 .about-content {

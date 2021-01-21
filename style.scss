@@ -4,16 +4,62 @@
     .cards--col3 {
         margin-bottom: -20px;
     }
-    .cards > .cards__item {
+    .cards > .cards-item {
         width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
     }
 }
 
-
+//ボタン色の変数定義
 $btn-color1: rgba(67, 204, 204, 0.897);
-$btn-color2: rgba(36, 30, 30, 0.795);
+$btn-color2: rgba(230, 112, 43, 0.911);
+
+//ボタンの設定
+.common-btn {
+    display: inline-block;
+    width: 330px;
+    max-width: 100%;
+    padding: 20px 10px;
+    border: 2.5px solid transparent;
+    border-radius: 30px;
+
+    text-align: center;
+    text-decoration: none;
+
+    &.top-page {
+        top: 70%;
+        left: 50%;
+        -ms-transform: translate(-70%, -50%);
+        -webkit-transform: translate(-70%, -50%);
+        transform: translate(70%, 150%);
+        margin: 0;
+        //padding: 0;
+        //width: max-content;
+        padding: 10px 5px;
+        font-size: 1rem;
+        background-color: $btn-color1;
+        box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
+        color: rgb(255, 255, 255);
+    }
+
+    &.food {
+        background-color: $btn-color2;
+        font-size: 1.375rem;
+        box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
+        color: rgb(255, 255, 255);
+        transition: 0.3s;
+    }
+}
+
+.food:focus,
+.food:hover {
+    background-color: rgba(255, 255, 255, 0.651);
+    border-color: currentColor;
+    color: $btn-color2;
+}
+
+
 
 // common
 html {
@@ -71,8 +117,8 @@ header a {
     margin: 0 5px;
     font-weight: bold;
 }
-// navigation-menu
-.nav_menu {
+// navi-menu
+.navi-menu {
     display: flex;
     color: rgb(27, 27, 27);
     align-items: center;
@@ -126,7 +172,7 @@ h2 {
 
 .home-contents {
     position: relative;
-    color: #0a0a0a;
+    color: #252525;
 }
 .home-article {
     position: absolute;
@@ -162,7 +208,7 @@ p {
 
 .home {
     background-image: url(images/topcover_l.png);
-    background-color: rgba(255, 255, 255, 0.253);
+    background-color: rgba(255, 255, 255, 0.171);
     background-blend-mode: lighten;
     min-height: 100vh;
     background-size: cover;
@@ -178,7 +224,7 @@ p {
     display: block;
     width: 100%;
     height: 100%;
-    background: rgba(20, 10, 10, 0.158);
+    background: #140a0a59;
 }
 
 .about-article {
@@ -253,6 +299,7 @@ p {
     }
 }
 
+//カルーセル(swiper）の仕様
 .swiper-container {
     width: 800px;
     height: 600px;
@@ -285,6 +332,7 @@ p {
     letter-spacing: 0.5em;
 }
 
+//foodページのCSS
 .food-content {
     text-align: center;
     margin-top: 30px;
@@ -300,60 +348,6 @@ p {
         font-weight: lighter;
     }
 }
-//.swiper-button-next,.swiper-container-rtl,.swiper-button-prev {
-//    background-image: url(
-//        data:image/svg + xml;charset=utf-8,
-//        %3Csvg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%…2L2.9%2C2.1L5%2C0L27%2C22L27%2C22z"%20fill%3D"%234682b4"%2F%3E%3C%2Fsvg%3E
-//    );
-//    right: 10px;
-//    left: auto;
-//}
-
-.common_btn {
-    display: inline-block;
-    width: 330px;
-    max-width: 100%;
-    padding: 20px 10px;
-    border: 2.5px solid transparent;
-    border-radius: 30px;
-
-    text-align: center;
-    text-decoration: none;
-
-
-
-    &.top-page{
-    top: 70%;
-    left: 50%;
-    -ms-transform: translate(-70%, -50%);
-    -webkit-transform: translate(-70%, -50%);
-    transform: translate(70%, 150%);
-    margin: 0;
-    //padding: 0;
-    //width: max-content;
-    padding: 10px 5px;
-    font-size: 1rem;
-    background-color: $btn-color1;
-    box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
-    color: rgb(255, 255, 255);
-    }
-
-    &.food{
-        background-color: $btn-color2;
-        font-size: 1.375rem;
-        box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
-        color: rgb(255, 255, 255);
-        transition: 0.3s;
-    }
-}
-
-.food_btn:focus,
-.food_btn:hover {
-    background-color: #fff;
-    border-color: currentColor;
-    color: $btn-color2;
-}
-
 //FOODページ
 
 .border-top {
@@ -372,16 +366,15 @@ p {
 
 .cards--col3 {
     margin-bottom: -30px;
-    > .cards__item {
+    > .cards-item {
         width: 31.707%;
         margin-right: 2.43902%;
         margin-bottom: 30px;
     }
-    > .cards__item:nth-of-type(3n) {
+    > .cards-item:nth-of-type(3n) {
         margin-right: 0;
     }
 }
-
 
 .card-title {
     margin: 0 auto;
@@ -392,13 +385,13 @@ p {
     border: 3px solid;
     font-weight: 600;
 }
-.card__img-wrapper {
+.card-img-wrapper {
     position: relative;
     padding-top: 53.25%;
     overflow: hidden;
 }
 
-.card__img {
+.card-img {
     position: absolute;
     top: 50%;
     left: 25%;
@@ -407,7 +400,7 @@ p {
     text-align: center;
 }
 
-.card__body {
+.card-body {
     padding: 15px;
     max-width: 50%;
     position: relative;
@@ -417,8 +410,16 @@ p {
     }
 }
 
-.card__text {
+.card-text {
     color: rgb(48, 47, 47);
     text-align: justify;
     font-size: 0.9rem;
 }
+//.swiper-button-next,.swiper-container-rtl,.swiper-button-prev {
+//    background-image: url(
+//        data:image/svg + xml;charset=utf-8,
+//        %3Csvg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%…2L2.9%2C2.1L5%2C0L27%2C22L27%2C22z"%20fill%3D"%234682b4"%2F%3E%3C%2Fsvg%3E
+//    );
+//    right: 10px;
+//    left: auto;
+//}

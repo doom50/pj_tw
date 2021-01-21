@@ -2,53 +2,11 @@
   .cards--col3 {
     margin-bottom: -20px;
   }
-  .cards > .cards-item {
+  .cards > .cards__item {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
-}
-
-.common-btn {
-  display: inline-block;
-  width: 330px;
-  max-width: 100%;
-  padding: 20px 10px;
-  border: 2.5px solid transparent;
-  border-radius: 30px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.common-btn.top-page {
-  top: 70%;
-  left: 50%;
-  -webkit-transform: translate(-70%, -50%);
-  transform: translate(70%, 150%);
-  margin: 0;
-  padding: 10px 5px;
-  font-size: 1rem;
-  background-color: rgba(67, 204, 204, 0.897);
-  -webkit-box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
-          box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
-  color: white;
-}
-
-.common-btn.food {
-  background-color: rgba(230, 112, 43, 0.911);
-  font-size: 1.375rem;
-  -webkit-box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
-          box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
-  color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.food:focus,
-.food:hover {
-  background-color: rgba(255, 255, 255, 0.651);
-  border-color: currentColor;
-  color: rgba(230, 112, 43, 0.911);
 }
 
 html {
@@ -112,7 +70,7 @@ header a {
   font-weight: bold;
 }
 
-.navi-menu {
+.nav_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,11 +87,11 @@ header a {
   letter-spacing: 0.2em;
 }
 
-.navi-menu a {
+.nav_menu a {
   margin: 0 12px 0;
 }
 
-.navi-menu li {
+.nav_menu li {
   margin-left: 20px;
 }
 
@@ -170,7 +128,7 @@ h2 {
 
 .home-contents {
   position: relative;
-  color: #252525;
+  color: #0a0a0a;
 }
 
 .home-article {
@@ -206,7 +164,7 @@ p {
 
 .home {
   background-image: url(images/topcover_l.png);
-  background-color: rgba(255, 255, 255, 0.171);
+  background-color: rgba(255, 255, 255, 0.253);
   background-blend-mode: lighten;
   min-height: 100vh;
   background-size: cover;
@@ -222,7 +180,7 @@ p {
   display: block;
   width: 100%;
   height: 100%;
-  background: #140a0a59;
+  background: rgba(20, 10, 10, 0.158);
 }
 
 .about-article {
@@ -250,6 +208,11 @@ p {
 .under.red {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(50%, #db24a479));
   background: linear-gradient(transparent 70%, #db24a479 50%);
+}
+
+.under.yellow {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(50%, #fcf826b7));
+  background: linear-gradient(transparent 70%, #fcf826b7 50%);
 }
 
 .about-content {
@@ -345,6 +308,48 @@ p {
   font-weight: lighter;
 }
 
+.common_btn {
+  display: inline-block;
+  width: 330px;
+  max-width: 100%;
+  padding: 20px 10px;
+  border: 2.5px solid transparent;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.common_btn.top-page {
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-70%, -50%);
+  transform: translate(70%, 150%);
+  margin: 0;
+  padding: 10px 5px;
+  font-size: 1rem;
+  background-color: rgba(67, 204, 204, 0.897);
+  -webkit-box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
+          box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
+  color: white;
+}
+
+.common_btn.food {
+  background-color: rgba(36, 30, 30, 0.795);
+  font-size: 1.375rem;
+  -webkit-box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
+          box-shadow: 0 3px 2px rgba(255, 255, 255, 0.103);
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.food_btn:focus,
+.food_btn:hover {
+  background-color: #fff;
+  border-color: currentColor;
+  color: rgba(36, 30, 30, 0.795);
+}
+
 .border-top {
   padding: 12px 14px 16px;
   border: 1px solid;
@@ -366,13 +371,13 @@ p {
   margin-bottom: -30px;
 }
 
-.cards--col3 > .cards-item {
+.cards--col3 > .cards__item {
   width: 31.707%;
   margin-right: 2.43902%;
   margin-bottom: 30px;
 }
 
-.cards--col3 > .cards-item:nth-of-type(3n) {
+.cards--col3 > .cards__item:nth-of-type(3n) {
   margin-right: 0;
 }
 
@@ -385,13 +390,13 @@ p {
   font-weight: 600;
 }
 
-.card-img-wrapper {
+.card__img-wrapper {
   position: relative;
   padding-top: 53.25%;
   overflow: hidden;
 }
 
-.card-img {
+.card__img {
   position: absolute;
   top: 50%;
   left: 25%;
@@ -401,18 +406,18 @@ p {
   text-align: center;
 }
 
-.card-body {
+.card__body {
   padding: 15px;
   max-width: 50%;
   position: relative;
   left: 25%;
 }
 
-.card-body :last-child {
+.card__body :last-child {
   margin-bottom: 0;
 }
 
-.card-text {
+.card__text {
   color: #302f2f;
   text-align: justify;
   font-size: 0.9rem;
